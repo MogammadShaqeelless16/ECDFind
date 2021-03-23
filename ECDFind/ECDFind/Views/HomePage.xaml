@@ -4,12 +4,9 @@
              x:Class="ECDFind.Views.HomePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            
-            
-            
+          
+
+
 
             <Button VerticalOptions="EndAndExpand" Text="Logout" TextColor="White" BackgroundColor="Blue" Clicked="Button_Clicked"/>
         </StackLayout>

@@ -21,5 +21,9 @@ namespace ECDFind.Views
         {
           await Navigation.PushModalAsync(new LoginPage());
         }
+
+
     }
+
+
 }

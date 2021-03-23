@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ECDFind.Views.ECDListDetails">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center">
+            <Label Text="Welcome"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="ECDName" HeightRequest="100" WidthRequest="100" />
+            <Label x:Name="ECDNumber" HeightRequest="100" WidthRequest="100" />
+            <Label x:Name="ECDEmail" HeightRequest="100" WidthRequest="100" />
+            <Label x:Name="ECDDetails" HeightRequest="100" WidthRequest="100" />
+            <Label x:Name="ECDCost" HeightRequest="100" WidthRequest="100" />
+
+            <Button VerticalOptions="EndAndExpand" Clicked="Button_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
