@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="ECDFind.Views.LoginPage">
+            
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image VerticalOptions="StartAndExpand" Source="Logo.jpeg" />
+
+            <Grid Margin="20,0,20,0" RowSpacing="20" VerticalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+
+
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0">
+                    <Entry Placeholder="Username" FontSize="16" x:Name="EntryUser"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1">
+                    <Entry Placeholder="Password" IsPassword="true" FontSize="16" x:Name="EntryPassword"/>
+                </StackLayout>
+             
+                <StackLayout Grid.Row="2">
+
+                   <Button Text="Login"  TextColor="White" WidthRequest="100" BackgroundColor="Blue" Clicked="Button_Clicked"/> 
+                   
+                </StackLayout>
+                <StackLayout Grid.Row="3">
+
+                    <Button Text="SignUp" TextColor="blue" WidthRequest="100"  Clicked="SignUpButton_Clicked"/>
+
+                </StackLayout>
+
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

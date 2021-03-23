@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ECDFind.Views.ECDListPage"
+             Title="List OF ECD Centres">
+    <ContentPage.Content>
+
+
+        <ListView ItemsSource="{Binding ECDList}"
+                  HasUnevenRows="True"
+                  SeparatorVisibility="None"
+              >
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+
+                        <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image
+                        HeightRequest="60"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.RowSpan="2"
+                        Aspect="AspectFill"
+                        WidthRequest="66"
+                        
+                        Source="{Binding Image}"
+                        />
+                    <Label Grid.Column="1"
+                           Text="{Binding Name}"
+                           VerticalOptions="End"/>
+                    <Label Grid.Column="1" Grid.Row="1"
+                           VerticalOptions="Start"
+                           Text="{Binding Details}"/>
+
+                </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+      
+            </ListView.ItemTemplate>
+            </ListView>
+  
+    </ContentPage.Content>
+</ContentPage>
